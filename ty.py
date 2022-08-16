@@ -42,3 +42,5 @@ print(f"Humidity: {humidity} %")
 print(f"Wind speed: {wind_speed} m/s")
 
 print("done")
+
+print("hello")
