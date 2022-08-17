@@ -1,4 +1,4 @@
-
+"""
 import twilio.rest
 from twilio.rest import Client
 
@@ -18,3 +18,13 @@ message = client.messages \
 
 print(message.sid)
 print("done")
+"""
+
+from twilio.rest import Client
+
+account = "AC17edf098792d89f24d5308f808f59a85"
+token = "a104cb9d07478452d77282af87294ab3"
+client = Client(account, token)
+
+message = client.messages.create(to="+91 70202 49770", from_="+19856038576",
+                                 body="Hello there!")
